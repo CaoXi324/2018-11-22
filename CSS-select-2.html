@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+    <head> 
+        <meta charset="utf-8"> 
+        <title>CSS标题</title>
+        <style>
+        [title=demo]{
+            font-weight: bolder;
+        }
+        [title~=demo]{
+            color:blue;
+        }
+        [title|=zh]{
+            color:red;
+        }
+        [title]{
+            font-size: 25px;
+        }
+        div{
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+        }
+        </style> 
+    </head>
+    <body>
+            <div title="demo">中国首都是北京。</div>
+            <div title="demo apple">美国首都是华盛顿。</div>
+            <div title="demo">英国首都是伦敦。</div>
+            <div title="demo zh">法国首都是巴黎。</div>
+            <div title="zh">德国是柏林。</div>
+            <div title="zh-ang">韩国首都是首尔。</div>
+            <div title="apple demo">日本首都是东京。</div>
+            <div title="orange">意大利首都是罗马。</div>
+            <div title="banana">荷兰首都是阿姆斯特丹。</div>
+            <div>丹麦首都是哥本哈根。</div>
+    </body>
+</html>
